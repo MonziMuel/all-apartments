@@ -1,0 +1,61 @@
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+}
+.video-container .filter {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+.video-container video {
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.h1-header{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 8em;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+}
+
+.h3-header{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+}
+
+.overlay-desc{
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 10em; right: 0; bottom: 0; left: 0;
+  vertical-align: middle;
+}
