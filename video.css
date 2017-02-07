@@ -1,10 +1,13 @@
 .homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    height: auto;
-    vertical-align: middle;
-    width: 100%;
+  position: fixed;
+  top: -20%;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
+
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
@@ -21,14 +24,14 @@
 .video-container .filter {
     z-index: 100;
     background: rgba(0, 0, 0, 0.9);
-    width: 100%;
+    height: 100%;
 }
 .video-container video {
     z-index: 0;
     bottom: 0;
 }
 .video-container video.fillWidth {
-    width: 100%;
+    height: 100%;
 }
 
 .h1-header{
@@ -55,7 +58,17 @@
 
 .overlay-desc{
   background: rgba(0,0,0,0);
-  position: absolute;
+  position: fixed;
   top: 10em; right: 0; bottom: 0; left: 0;
   vertical-align: middle;
+}
+
+@media (max-width: 980px){
+  .h1-header{
+    font-size: 4em;
+}
+
+.h3-header{
+    font-size: 2em;
+}
 }
